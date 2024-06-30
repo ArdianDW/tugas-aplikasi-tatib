@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="530dp"
+            android:layout_height="450dp"
+            android:layout_marginBottom="104dp"
+            android:background="@drawable/profile_head_asset"
+            app:layout_constraintBottom_toTopOf="@+id/view6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="82dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginBottom="87dp"
+            android:src="@drawable/baseline_person_24"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            app:layout_constraintStart_toEndOf="@+id/view5"
+            app:layout_constraintStart_toStartOf="@+id/view5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/namaUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="211dp"
+            android:textAlignment="center"
+            android:textColor="#070707"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/kelas"
+            app:layout_constraintStart_toEndOf="@+id/view5"
+            app:layout_constraintStart_toStartOf="@+id/view5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.902" />
+
+        <TextView
+            android:id="@+id/kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="108dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="367dp"
+            android:layout_height="307dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/info"
+            app:layout_constraintBottom_toTopOf="@+id/ChangePwBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/ChangePwBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Ubah Password"
+            app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="110dp"
+            android:text="Logout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/infoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:text="Info Anda"
+            android:textColor="#1E6067"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="365dp"
+            android:layout_height="302dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/ChangePwBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/infoEmail"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingStart="20dp"
+                android:paddingTop="25dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tagNIS"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:paddingStart="20dp"
+                android:paddingTop="13dp"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/infoNIS"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tagTTL"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:paddingStart="20dp"
+                android:paddingTop="11dp"
+                android:text="Tempat Tanggal Lahir"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/infoTTL"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:paddingStart="20dp"
+                android:paddingTop="7dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tagAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                android:text="Alamat"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/infoAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "246704847597",
+    "project_id": "db-apktatib",
+    "storage_bucket": "db-apktatib.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246704847597:android:7c178a599b23a9dc212ae4",
+        "android_client_info": {
+          "package_name": "com.kelompokMPKK.project_tatib"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRVKnFCfZhedRpxqtSxHtCEuuBbjH2h_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

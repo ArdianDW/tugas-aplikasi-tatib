@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckgrond"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Aplikasi Tatib"
+        android:textSize="50dp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="350dp"
+        android:layout_height="325dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/yesss"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/gg_profile"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="Email"
+        android:paddingStart="16dp"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="412dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="Password"
+        android:paddingStart="16dp"
+        android:inputType="textPassword"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="484dp"
+        android:background="@drawable/button_bg"
+        android:text="Login"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
