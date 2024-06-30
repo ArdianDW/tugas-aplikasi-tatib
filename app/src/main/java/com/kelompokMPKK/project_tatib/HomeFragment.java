@@ -44,7 +44,7 @@ public class HomeFragment extends Fragment {
     private String uid;
 
     public HomeFragment() {
-        // Required empty public constructor
+        
     }
 
     @Override
@@ -59,15 +59,15 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         date = view.findViewById(R.id.date);
         listView = view.findViewById(R.id.listview);
         editNote = view.findViewById(R.id.edit_note);
         Button clearNotesButton = view.findViewById(R.id.clear_notes);
-        TextView nameHome = view.findViewById(R.id.nameHome); // Pastikan ID ini sesuai dengan layout XML Anda
+        TextView nameHome = view.findViewById(R.id.nameHome); 
         TextView poinPelanggaranText = view.findViewById(R.id.totalpoin);
-        TextView kalimatJumlahPoin = view.findViewById(R.id.kalimatjumlahpoin); // Pastikan ID ini sesuai dengan layout XML Anda
+        TextView kalimatJumlahPoin = view.findViewById(R.id.kalimatjumlahpoin); 
 
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -88,11 +88,9 @@ public class HomeFragment extends Fragment {
                         String kelas = dataSnapshot.child("kelas").getValue(String.class);
                         nameHome.setText("Wali Kelas " + kelas);
 
-                        // Sembunyikan TextView poin pelanggaran dan kalimat jumlah poin
                         poinPelanggaranText.setVisibility(View.GONE);
                         kalimatJumlahPoin.setVisibility(View.GONE);
 
-                        // Ambil dan tampilkan mata pelajaran dengan ukuran teks yang lebih kecil
                         String mapel = dataSnapshot.child("mapel").getValue(String.class);
                         poinPelanggaranText.setText("Mata Pelajaran: " + mapel);
                         poinPelanggaranText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 14);
@@ -101,7 +99,6 @@ public class HomeFragment extends Fragment {
                         String nama = dataSnapshot.child("nama").getValue(String.class);
                         nameHome.setText(nama);
 
-                        // Tampilkan poin pelanggaran dan kalimat jumlah poin untuk non-guru dengan ukuran teks normal
                         Integer poinPelanggaran = dataSnapshot.child("poin").getValue(Integer.class);
                         if (poinPelanggaran == null) poinPelanggaran = 0;
                         poinPelanggaranText.setText("Total Poin: " + poinPelanggaran);
@@ -158,7 +155,7 @@ public class HomeFragment extends Fragment {
                 try {
                     while (!isInterrupted()) {
                         Thread.sleep(1000);
-                        if (isAdded()) { // cek apakah Fragment masih ditambahkan ke Activity
+                        if (isAdded()) {
                             requireActivity().runOnUiThread(() -> {
                                 long dateLong = System.currentTimeMillis();
                                 @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("dd MMMM yyyy\nHH:mm:ss", new Locale("id", "ID"));
